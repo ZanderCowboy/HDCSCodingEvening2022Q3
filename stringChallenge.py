@@ -33,7 +33,7 @@ def allAboutStrings(string):
 	# testing parity of strings and returns characters accordingly
 	if string_len % 2 == 0:  # even length string, returns middle two characters
 		middle_len = int(string_len / 2)
-		middle_character = string[middle_len] + string[middle_len + 1]
+		middle_character = string[middle_len - 1] + string[middle_len]
 	elif string_len % 2 == 1:  # odd length string, returns middle character
 		middle_character = string[int(string_len / 2)]
 
