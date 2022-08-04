@@ -21,13 +21,14 @@
 # functions that gets length, first and last character, middle character(s) and index
 def allAboutStrings(string):
 	# initialization
+	middle_character = ''
 	string_len = len(string)  # getting length of string
 	new_array = []
 	print("Printing string: " + string)
 
 	# test whether the string is long enough
 	if string_len < 3:
-		print("The string given is not long enough. Exiting")
+		print("The string given is not long enough.")
 
 	# testing parity of strings and returns characters accordingly
 	if string_len % 2 == 0:  # even length string, returns middle two characters
@@ -43,7 +44,7 @@ def allAboutStrings(string):
 	new_array.append(string_len)  # string length
 	new_array.append(string[0])  # first character
 	new_array.append(string[string_len - 1])  # last character
-	new_array.append(middle_character)
+	new_array.append(middle_character)  # middle character
 	if index_of_sec_occurrence == -1:
 		new_array.append("not found")
 	elif index_of_sec_occurrence >= 0:
